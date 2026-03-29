@@ -1,0 +1,17 @@
+models:
+  primary:
+    - name: openai/gpt-5.4-pro
+      tier: primary
+    - name: anthropic/claude-sonnet-4.6
+      tier: primary
+    - name: deepseek/deepseek-v3.2
+      tier: primary
+    - name: minimax/minimax-m2.5
+      tier: primary
+    - name: google/gemini-3-flash-preview
+      tier: primary
+  exploratory:
+    - name: x-ai/grok-4.20-beta
+      tier: exploratory
+    - name: stepfun/step-3.5-flash:free
+      tier: exploratory

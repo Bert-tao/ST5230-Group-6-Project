@@ -1,0 +1,4 @@
+models:
+  exploratory:
+    - name: stepfun/step-3.5-flash:free
+      tier: exploratory

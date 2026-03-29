@@ -1,0 +1,6 @@
+Compare Translation A and Translation B for the source passage below.
+Choose the better translation overall.
+Return ONLY valid JSON:
+{"winner":"A"}
+or
+{"winner":"B"}

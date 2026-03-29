@@ -1,0 +1,4 @@
+models:
+  primary:
+    - name: google/gemini-3-flash-preview
+      tier: primary

@@ -1,0 +1,4 @@
+models:
+  core:
+    - name: deepseek/deepseek-v3.2
+      tier: primary

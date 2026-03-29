@@ -1,0 +1,7 @@
+You are an impartial judge evaluating two English translations of the same source passage.
+Assess the translations mainly in terms of overall translation quality, considering faithfulness, fluency, and style.
+Do not favor a translation simply because it is more modern, more fluent, or more elaborate.
+Return ONLY valid JSON in the following format:
+{"winner":"A"}
+or
+{"winner":"B"}

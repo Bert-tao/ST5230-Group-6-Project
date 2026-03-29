@@ -1,0 +1,4 @@
+models:
+  primary:
+    - name: minimax/minimax-m2.5
+      tier: primary
