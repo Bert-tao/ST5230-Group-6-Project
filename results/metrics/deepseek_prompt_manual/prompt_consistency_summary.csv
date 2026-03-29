@@ -1,0 +1,5 @@
+﻿group,model,n,prompt_consistency_rate,ci_lower,ci_upper
+overall,deepseek/deepseek-v3.2,45,0.9777777777777777,0.9333333333333333,1.0
+lang=de,deepseek/deepseek-v3.2,19,0.9473684210526315,0.8421052631578947,1.0
+lang=fr,deepseek/deepseek-v3.2,16,1.0,1.0,1.0
+lang=ru,deepseek/deepseek-v3.2,10,1.0,1.0,1.0

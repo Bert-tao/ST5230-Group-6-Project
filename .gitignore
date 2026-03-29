@@ -18,8 +18,6 @@ Thumbs.db
 .vscode/
 
 # Results / temp
-results/raw/*.jsonl
-results/metrics/
 *.log
 
 # Large generated files (adjust if needed)

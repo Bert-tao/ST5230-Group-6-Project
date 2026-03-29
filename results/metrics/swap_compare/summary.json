@@ -1,0 +1,8 @@
+{
+  "n_main_rows": 198,
+  "n_swap_rows": 90,
+  "models_compared": [
+    "deepseek/deepseek-v3.2",
+    "google/gemini-3-flash-preview"
+  ]
+}

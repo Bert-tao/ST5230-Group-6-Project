@@ -1,0 +1,2 @@
+model,n,agreement_rate,ci_lower,ci_upper,binom_pvalue
+minimax/minimax-m2.5,7,1.0,1.0,1.0,0.0078125

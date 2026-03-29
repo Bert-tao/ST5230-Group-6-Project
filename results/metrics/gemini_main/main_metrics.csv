@@ -1,0 +1,2 @@
+model,n,agreement_rate,ci_lower,ci_upper,binom_pvalue
+google/gemini-3-flash-preview,99,0.8787878787878788,0.8080808080808081,0.9393939393939394,1.684878537104383e-15

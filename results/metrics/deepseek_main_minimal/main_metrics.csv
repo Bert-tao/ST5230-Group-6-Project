@@ -1,0 +1,2 @@
+model,n,agreement_rate,ci_lower,ci_upper,binom_pvalue
+deepseek/deepseek-v3.2,99,0.898989898989899,0.8383838383838383,0.9595959595959596,2.7606334625906715e-17

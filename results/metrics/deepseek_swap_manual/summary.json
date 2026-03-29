@@ -1,0 +1,7 @@
+{
+  "n_main_rows": 99,
+  "n_swap_rows": 45,
+  "models_compared": [
+    "deepseek/deepseek-v3.2"
+  ]
+}
