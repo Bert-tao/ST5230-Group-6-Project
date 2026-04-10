@@ -1,0 +1,4 @@
+models:
+  primary:
+    - name: x-ai/grok-4.20-beta
+      tier: primary

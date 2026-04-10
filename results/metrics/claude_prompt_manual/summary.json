@@ -1,0 +1,7 @@
+{
+  "n_main_rows": 99,
+  "n_minimal_rows": 45,
+  "models_compared": [
+    "anthropic/claude-sonnet-4.6"
+  ]
+}

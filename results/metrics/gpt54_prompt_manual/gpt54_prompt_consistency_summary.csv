@@ -1,0 +1,5 @@
+﻿group,model,n,prompt_consistency_rate,ci_lower,ci_upper
+overall,openai/gpt-5.4,45,0.9777777777777777,0.9333333333333333,1.0
+lang=de,openai/gpt-5.4,19,0.9473684210526315,0.8421052631578947,1.0
+lang=fr,openai/gpt-5.4,16,1.0,1.0,1.0
+lang=ru,openai/gpt-5.4,10,1.0,1.0,1.0

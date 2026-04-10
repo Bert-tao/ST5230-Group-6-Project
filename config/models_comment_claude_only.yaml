@@ -1,0 +1,4 @@
+models:
+  core:
+    - name: "anthropic/claude-sonnet-4.6"
+      tier: primary

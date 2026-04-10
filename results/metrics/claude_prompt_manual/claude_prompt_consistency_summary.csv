@@ -1,0 +1,5 @@
+﻿group,model,n,prompt_consistency_rate,ci_lower,ci_upper
+overall,anthropic/claude-sonnet-4.6,40,1.0,1.0,1.0
+lang=de,anthropic/claude-sonnet-4.6,19,1.0,1.0,1.0
+lang=fr,anthropic/claude-sonnet-4.6,14,1.0,1.0,1.0
+lang=ru,anthropic/claude-sonnet-4.6,7,1.0,1.0,1.0

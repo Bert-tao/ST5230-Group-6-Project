@@ -1,0 +1,4 @@
+models:
+  primary:
+    - name: openai/gpt-5.4
+      tier: primary

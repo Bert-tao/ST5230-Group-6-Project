@@ -18,6 +18,9 @@ categories = [
 human_raw = np.array([13, 11, 7, 13, 9, 18, 11, 5], dtype=float)
 deepseek_raw = np.array([3, 14, 13, 5, 0, 16, 8, 3], dtype=float)
 gemini_raw = np.array([5, 11, 4, 8, 6, 3, 8, 4], dtype=float)
+grok_raw = np.array([5,8,5,3,1,11,3,1], dtype=float)
+claude_raw = np.array([3,8,3,3,2,4,5,0], dtype=float)
+gpt54_raw = np.array([10,9,7,4,8,4,14,3], dtype=float)
 
 # =========================
 # Normalize by source total
@@ -25,6 +28,10 @@ gemini_raw = np.array([5, 11, 4, 8, 6, 3, 8, 4], dtype=float)
 human = human_raw / human_raw.sum()
 deepseek = deepseek_raw / deepseek_raw.sum()
 gemini = gemini_raw / gemini_raw.sum()
+grok = grok_raw / grok_raw.sum()
+claude = claude_raw / claude_raw.sum()
+gpt54 = gpt54_raw / gpt54_raw.sum()
+
 
 # =========================
 # Radar prep
@@ -36,9 +43,12 @@ angles_closed = np.concatenate([angles, [angles[0]]])
 human_plot = np.concatenate([human, [human[0]]])
 deepseek_plot = np.concatenate([deepseek, [deepseek[0]]])
 gemini_plot = np.concatenate([gemini, [gemini[0]]])
+grok_plot = np.concatenate([grok, [grok[0]]])
+claude_plot = np.concatenate([claude, [claude[0]]])
+gpt54_plot = np.concatenate([gpt54, [gpt54[0]]])
 
-max_value = max(human.max(), deepseek.max(), gemini.max())
-upper = max_value + 0.04
+max_value = max(human.max(), deepseek.max(), gemini.max(), grok.max(), claude.max(), gpt54.max())
+upper = max_value + 0.005
 
 levels = 5
 r_ticks = np.linspace(upper / levels, upper, levels)
@@ -125,7 +135,7 @@ for i, (angle, label) in enumerate(zip(angles, categories)):
 line1, = ax.plot(
     angles_closed, human_plot,
     linewidth=2.3,
-    label="Human comments",
+    label="Human",
     zorder=3
 )
 ax.fill(angles_closed, human_plot, alpha=0.16, zorder=2)
@@ -133,7 +143,7 @@ ax.fill(angles_closed, human_plot, alpha=0.16, zorder=2)
 line2, = ax.plot(
     angles_closed, deepseek_plot,
     linewidth=2.3,
-    label="DeepSeek comments",
+    label="DeepSeek V3.2",
     zorder=3
 )
 ax.fill(angles_closed, deepseek_plot, alpha=0.16, zorder=2)
@@ -141,10 +151,34 @@ ax.fill(angles_closed, deepseek_plot, alpha=0.16, zorder=2)
 line3, = ax.plot(
     angles_closed, gemini_plot,
     linewidth=2.3,
-    label="Gemini comments",
+    label="Gemini 3 Flash Preview",
     zorder=3
 )
 ax.fill(angles_closed, gemini_plot, alpha=0.16, zorder=2)
+
+line4, = ax.plot(
+    angles_closed, grok_plot,
+    linewidth=2.3,
+    label="Grok 4.20 Beta",
+    zorder=3
+)
+ax.fill(angles_closed, grok_plot, alpha=0.16, zorder=2)
+
+line5, = ax.plot(
+    angles_closed, claude_plot,
+    linewidth=2.3,
+    label="Claude Sonnet 4.6",
+    zorder=3
+)
+ax.fill(angles_closed, claude_plot, alpha=0.16, zorder=2)
+
+line6, = ax.plot(
+    angles_closed, gpt54_plot,
+    linewidth=2.3,
+    label="GPT-5.4",
+    zorder=3
+)
+ax.fill(angles_closed, gpt54_plot, alpha=0.16, zorder=2)
 
 # =========================
 # Title
@@ -159,7 +193,7 @@ plt.title(
 # Legend at bottom, horizontal
 # =========================
 ax.legend(
-    handles=[line1, line2, line3],
+    handles=[line1, line2, line3, line4, line5, line6],
     loc="upper center",
     bbox_to_anchor=(0.5, -0.10),
     ncol=3,

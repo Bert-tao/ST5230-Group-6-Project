@@ -1,0 +1,2 @@
+model,n,agreement_rate,ci_lower,ci_upper,binom_pvalue
+x-ai/grok-4.20-beta,99,0.9494949494949495,0.898989898989899,0.98989898989899,1.1903803774701958e-22

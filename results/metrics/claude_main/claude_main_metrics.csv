@@ -1,0 +1,2 @@
+model,n,agreement_rate,ci_lower,ci_upper,binom_pvalue
+anthropic/claude-sonnet-4.6,88,0.9204545454545454,0.8636363636363636,0.9659090909090909,2.239814416537182e-17
