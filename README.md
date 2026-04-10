@@ -361,18 +361,6 @@ We compared **human comments** and **LLM self-comments** across the following 8 
 
 ## 6. Key generated outputs
 
-### Tables / documents
-- `results_summary_tables.xlsx`
-- `updated_results_tables/results_summary_tables_expanded.xlsx`
-- `Group6_complete_tables.xlsx`
-- `Group6_bilingual_paper.docx`
-- `ST5230_Group6_项目进展说明.docx`
-
-### Slides / plots
-- `Group6_Project_Update_fixed_with_charts.pptx`
-- `RQ1_validity_bar.png`
-- radar / comparison figures used in PPT and paper
-
 ### Comment-analysis merged tables
 - `comment_comparison_merged.csv`
 - `comment_comparison_merged_all_models.csv`
